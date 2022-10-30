@@ -32,13 +32,21 @@ public static void main(String[] args) {
 	     b2=sc.nextInt();
 		dis1=Math.sqrt((a2-a1)*(a2-a1) + (b2-b1)*(b2-b1));
 		System.out.println("distancebetween"+"("+a1+","+a2+"),"+"("+b1+","+b2+")="+dis1);
-		String line_1=String.valueOf(dis);
-		String line_2=String.valueOf(dis1);
-		if(line_1.equals(line_2)) {
-			System.out.println("both lines are equal");
-		}
-		else {
-			System.out.println("both lines are not equal");
-		}
+		//String line_1=String.valueOf(dis);
+		//String line_2=String.valueOf(dis1);
+		
+		
+		if (Double.compare(dis, dis1) == 0) {
+			 
+            System.out.println("Both Lines are equal");
+        }
+        else if (Double.compare(dis, dis1) < 0) {
+ 
+            System.out.println("line1 is less than line2");
+        }
+        else {
+ 
+            System.out.println("line1 is greater than line2");
+        }
 		}
 }
